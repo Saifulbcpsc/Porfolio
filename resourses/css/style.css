@@ -1,0 +1,291 @@
+/* ============================= */
+/* FONTS */
+/* ============================= */
+
+@font-face{
+    src:url('../fonts/SEGOEUI.TTF');
+    font-family:SEGOEUI, sans-serif;
+}
+
+/* ============================= */
+/* BSIC SETUP */
+/* ============================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:SEGOEUI, sans-serif;
+    font-size: 20px;
+    color: #464b4f;
+    border-color: #fff;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+
+.row{
+    max-width: 980px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================= */
+/* REUSABLE COMPONENTS */
+/* ============================= */
+
+header,
+section,
+footer{
+    padding: 120px 0;
+}
+
+h1,h2{
+    font-size: 400%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h3{
+    font-size: 90%;
+    margin: 10px 0;
+    color: palevioletred;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.btn-full{
+  margin-top: 42px;  
+}
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"]{
+    color: #fff;
+    background-color: #7b77c9;
+    padding: 15px 35px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type="submit"]:hover{
+ background-color: #3d3990;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('img/hero-bg.jpg') no-repeat center / cover;
+    height: 100vh;color: #fff;
+}
+
+.logo{
+    height: 90px;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box p{
+    font-size: 90%;
+    width: 70%;
+    margin: auto;
+    
+}
+
+.scroll-down{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    margin: auto;
+}
+.scroll-down a i{
+    color: #fff;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 100%;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+/* ============================= */
+/* ABOUT SECTION */
+/* ============================= */
+
+.about{
+    background: url('img/shadow.jpg') no-repeat center /cover;
+}
+
+.about h2{
+    margin: 60px 0;
+    color: #fff;
+}
+
+.about-me p{
+    font-size: 150%;
+    line-height: 130%;
+    color: salmon;
+}
+.about-box{
+   text-align: left;
+}
+.about-box p{
+    font-size: 90%;
+    color:#fff;
+    line-height: 150%;
+}
+
+/* ============================= */
+/* WORK SECTION */
+/* ============================= */
+
+.work{
+    background: url('img/bg2.jpg') no-repeat center /cover;
+    color: #fff;
+}
+.work h3{
+  font-size: 105%;  
+}
+.work span{
+    font-size: 70%;
+    color: #818baa;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.filter{
+  margin: 45px 0;  
+}
+
+.filter ul li{
+    list-style: none;
+    display: inline-block;
+}
+.filter ul li a{
+    color: #fff;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+}
+.filter ul li a:hover{
+    border-color: #fff;
+}
+.demo{
+   background: #000; 
+}
+.demo img{
+    width: 100%;
+    opacity: 0.7;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+.demo img:hover{
+    opacity: 1;
+}
+
+/* ============================= */
+/* BG SECTION */
+/* ============================= */
+
+.pg{
+    background: url('img/zig-zag.jpg') no-repeat center /cover;
+}
+.pg p{
+    font-size: 150%;
+    color: #000;
+    width: 75%;
+    margin: 30px auto;
+}
+.pg img{
+    display: block;
+    width: 100%;
+    opacity: 0.7;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+.pg img:hover{
+    opacity: 1;
+}
+
+/* ============================= */
+/* SUBSCRIBE SECTION */
+/* ============================= */
+
+.subscribe{
+    padding: 120px 0;
+     background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('img/bg3.jpg') no-repeat center / cover;
+    
+}
+.infinity{
+    height: 30px;
+}
+.subscribe p{
+    font-size: 90%;
+    width: 50%;
+    margin: 35px auto;
+    color: #fff;
+    
+}
+form input[type="email"]{
+ border: 1px solid #fff;
+ font-size: 90%;
+ color: #333;
+ padding: 15px 10px;
+ border-radius: 5px;
+ width: 380px;
+}
+form input[type="submit"]{
+   font-size: 90%;
+    padding: 15px 45px;
+}
+form ::placeholder {
+    #c8c8c8;
+}
+
+/* ============================= */
+/* FOOTER SECTION */
+/* ============================= */
+
+.footer{
+    background: url('img/cover2.jpg') no-repeat center /cover;
+}
+.footer ul li{
+    display: inline-block;
+}
+
+.footer ul li a{
+  color: #2486dc;
+    font-size: 300%;
+    margin: 0 10px;
+}
+
+
+
+
+
+
